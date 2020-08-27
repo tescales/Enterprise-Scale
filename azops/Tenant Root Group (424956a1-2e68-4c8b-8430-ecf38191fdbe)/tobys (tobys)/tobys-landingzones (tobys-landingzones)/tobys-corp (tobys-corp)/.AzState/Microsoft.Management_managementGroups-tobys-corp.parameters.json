@@ -42,7 +42,7 @@
                           "properties": {
                             "addressSpace": {
                               "addressPrefixes": [
-                                "10.10.10.0/24"
+                                "10.100.10.0/24"
                               ]
                             }
                           }
