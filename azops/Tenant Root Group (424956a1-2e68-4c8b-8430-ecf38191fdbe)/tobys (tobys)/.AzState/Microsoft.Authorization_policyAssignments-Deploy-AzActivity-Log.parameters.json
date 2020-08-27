@@ -1,0 +1,37 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Identity": {
+          "principalId": "18f06ab6-a59c-427c-9d04-9c7da915282d",
+          "tenantId": "424956a1-2e68-4c8b-8430-ecf38191fdbe",
+          "type": "SystemAssigned"
+        },
+        "Location": "westus2",
+        "Name": "Deploy-AzActivity-Log",
+        "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/tobys/providers/Microsoft.Authorization/policyAssignments/Deploy-AzActivity-Log",
+        "Properties": {
+          "Description": "Deploy-AzActivity-Log",
+          "DisplayName": "Deploy-AzActivity-Log",
+          "NotScopes": null,
+          "Parameters": {
+            "logAnalytics": {
+              "value": "/subscriptions/3b3d59d9-43ff-4efc-a7c1-355817807d04/resourcegroups/tobys-mgmt/providers/microsoft.operationalinsights/workspaces/tobys-la-3b3d59d9-43ff-4efc-a7c1-355817807d04"
+            }
+          },
+          "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/tobys/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-ActivityLog",
+          "Scope": "/providers/Microsoft.Management/managementGroups/tobys"
+        },
+        "ResourceId": "/providers/Microsoft.Management/managementGroups/tobys/providers/Microsoft.Authorization/policyAssignments/Deploy-AzActivity-Log",
+        "ResourceName": "Deploy-AzActivity-Log",
+        "ResourceType": "Microsoft.Authorization/policyAssignments",
+        "Sku": {
+          "name": "A0",
+          "tier": "Free"
+        }
+      }
+    }
+  }
+}

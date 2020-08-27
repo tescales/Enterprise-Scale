@@ -1,0 +1,28 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/providers/Microsoft.Management/managementGroups/testRBAC",
+        "Type": "/providers/Microsoft.Management/managementGroups",
+        "Name": "testRBAC",
+        "TenantId": "424956a1-2e68-4c8b-8430-ecf38191fdbe",
+        "DisplayName": "testRBAC",
+        "UpdatedTime": "0001-01-01T00:00:00Z",
+        "UpdatedBy": null,
+        "ParentId": "/providers/Microsoft.Management/managementGroups/424956a1-2e68-4c8b-8430-ecf38191fdbe",
+        "ParentName": "424956a1-2e68-4c8b-8430-ecf38191fdbe",
+        "ParentDisplayName": "Tenant Root Group",
+        "Children": null,
+        "properties": {
+          "policyDefinitions": [],
+          "policySetDefinitions": [],
+          "policyAssignments": [],
+          "roleDefinitions": [],
+          "roleAssignments": []
+        }
+      }
+    }
+  }
+}
