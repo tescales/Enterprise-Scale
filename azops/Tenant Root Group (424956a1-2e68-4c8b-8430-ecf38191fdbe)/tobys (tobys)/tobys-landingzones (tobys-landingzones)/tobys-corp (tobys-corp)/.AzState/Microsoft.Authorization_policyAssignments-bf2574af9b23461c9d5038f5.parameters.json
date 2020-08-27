@@ -1,0 +1,39 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Identity": {
+          "principalId": "c356a958-2aa6-4ee7-8fab-ab884bdc8894",
+          "tenantId": "424956a1-2e68-4c8b-8430-ecf38191fdbe",
+          "type": "SystemAssigned"
+        },
+        "Location": "eastus",
+        "Name": "bf2574af9b23461c9d5038f5",
+        "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/tobys-corp/providers/Microsoft.Authorization/policyAssignments/bf2574af9b23461c9d5038f5",
+        "Properties": {
+          "Description": null,
+          "DisplayName": "Deploy-vNet",
+          "NotScopes": null,
+          "Parameters": {
+            "ipam": {
+              "value": [
+                "Los Angeles"
+              ]
+            }
+          },
+          "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/tobys/providers/Microsoft.Authorization/policyDefinitions/Deploy-vNet",
+          "Scope": "/providers/Microsoft.Management/managementGroups/tobys-corp"
+        },
+        "ResourceId": "/providers/Microsoft.Management/managementGroups/tobys-corp/providers/Microsoft.Authorization/policyAssignments/bf2574af9b23461c9d5038f5",
+        "ResourceName": "bf2574af9b23461c9d5038f5",
+        "ResourceType": "Microsoft.Authorization/policyAssignments",
+        "Sku": {
+          "name": "A0",
+          "tier": "Free"
+        }
+      }
+    }
+  }
+}
