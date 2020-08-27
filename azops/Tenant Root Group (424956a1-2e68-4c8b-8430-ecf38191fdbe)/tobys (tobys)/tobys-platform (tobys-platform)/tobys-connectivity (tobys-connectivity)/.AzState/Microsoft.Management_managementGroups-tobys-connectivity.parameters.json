@@ -14,7 +14,15 @@
         "ParentId": "/providers/Microsoft.Management/managementGroups/tobys-platform",
         "ParentName": "tobys-platform",
         "ParentDisplayName": "tobys-platform",
-        "Children": null,
+        "Children": [
+          {
+            "Type": "/subscriptions",
+            "Id": "/subscriptions/bc93b57b-64e1-4729-8efc-02560b1ffab0",
+            "Name": "bc93b57b-64e1-4729-8efc-02560b1ffab0",
+            "DisplayName": "Pay-As-You-Go",
+            "Children": null
+          }
+        ],
         "properties": {
           "policyDefinitions": [],
           "policySetDefinitions": [],
