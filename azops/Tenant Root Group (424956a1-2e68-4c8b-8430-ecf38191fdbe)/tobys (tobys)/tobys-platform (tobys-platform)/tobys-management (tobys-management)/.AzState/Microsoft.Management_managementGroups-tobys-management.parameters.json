@@ -1,0 +1,78 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/providers/Microsoft.Management/managementGroups/tobys-management",
+        "Type": "/providers/Microsoft.Management/managementGroups",
+        "Name": "tobys-management",
+        "TenantId": "424956a1-2e68-4c8b-8430-ecf38191fdbe",
+        "DisplayName": "tobys-management",
+        "UpdatedTime": "0001-01-01T00:00:00Z",
+        "UpdatedBy": null,
+        "ParentId": "/providers/Microsoft.Management/managementGroups/tobys-platform",
+        "ParentName": "tobys-platform",
+        "ParentDisplayName": "tobys-platform",
+        "Children": [
+          {
+            "Type": "/subscriptions",
+            "Id": "/subscriptions/3b3d59d9-43ff-4efc-a7c1-355817807d04",
+            "Name": "3b3d59d9-43ff-4efc-a7c1-355817807d04",
+            "DisplayName": "Scales.cloud",
+            "Children": null
+          }
+        ],
+        "properties": {
+          "policyDefinitions": [],
+          "policySetDefinitions": [],
+          "policyAssignments": [
+            {
+              "Identity": {
+                "principalId": "cdd92592-204a-4d73-8ed4-52fe30ccd770",
+                "tenantId": "424956a1-2e68-4c8b-8430-ecf38191fdbe",
+                "type": "SystemAssigned"
+              },
+              "Location": "westus2",
+              "Name": "Deploy-Log-Analytics",
+              "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/tobys-management/providers/Microsoft.Authorization/policyAssignments/Deploy-Log-Analytics",
+              "Properties": {
+                "Description": "Deploy-Log-Analytics",
+                "DisplayName": "Deploy-Log-Analytics",
+                "NotScopes": null,
+                "Parameters": {
+                  "automationAccountName": {
+                    "value": "tobys-a-3b3d59d9-43ff-4efc-a7c1-355817807d04"
+                  },
+                  "automationRegion": {
+                    "value": "westus2"
+                  },
+                  "rgName": {
+                    "value": "tobys-mgmt"
+                  },
+                  "workspaceName": {
+                    "value": "tobys-la-3b3d59d9-43ff-4efc-a7c1-355817807d04"
+                  },
+                  "workspaceRegion": {
+                    "value": "westus2"
+                  }
+                },
+                "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/tobys/providers/Microsoft.Authorization/policyDefinitions/Deploy-Log-Analytics",
+                "Scope": "/providers/Microsoft.Management/managementGroups/tobys-management"
+              },
+              "ResourceId": "/providers/Microsoft.Management/managementGroups/tobys-management/providers/Microsoft.Authorization/policyAssignments/Deploy-Log-Analytics",
+              "ResourceName": "Deploy-Log-Analytics",
+              "ResourceType": "Microsoft.Authorization/policyAssignments",
+              "Sku": {
+                "name": "A0",
+                "tier": "Free"
+              }
+            }
+          ],
+          "roleDefinitions": [],
+          "roleAssignments": []
+        }
+      }
+    }
+  }
+}

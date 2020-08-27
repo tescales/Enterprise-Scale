@@ -1,0 +1,69 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Identity": null,
+        "Location": null,
+        "Name": "SecurityCenterBuiltIn",
+        "PolicyAssignmentId": "/subscriptions/3b3d59d9-43ff-4efc-a7c1-355817807d04/providers/Microsoft.Authorization/policyAssignments/SecurityCenterBuiltIn",
+        "Properties": {
+          "Description": "This policy assignment was automatically created by Azure Security Center",
+          "DisplayName": "ASC Default (subscription: 3b3d59d9-43ff-4efc-a7c1-355817807d04)",
+          "NotScopes": null,
+          "Parameters": {
+            "adaptiveApplicationControlsMonitoringEffect": {
+              "value": "AuditIfNotExists"
+            },
+            "diskEncryptionMonitoringEffect": {
+              "value": "AuditIfNotExists"
+            },
+            "endpointProtectionMonitoringEffect": {
+              "value": "AuditIfNotExists"
+            },
+            "jitNetworkAccessMonitoringEffect": {
+              "value": "AuditIfNotExists"
+            },
+            "networkSecurityGroupsMonitoringEffect": {
+              "value": "AuditIfNotExists"
+            },
+            "nextGenerationFirewallMonitoringEffect": {
+              "value": "AuditIfNotExists"
+            },
+            "sqlAuditingMonitoringEffect": {
+              "value": "AuditIfNotExists"
+            },
+            "sqlEncryptionMonitoringEffect": {
+              "value": "AuditIfNotExists"
+            },
+            "storageEncryptionMonitoringEffect": {
+              "value": "Disabled"
+            },
+            "systemConfigurationsMonitoringEffect": {
+              "value": "AuditIfNotExists"
+            },
+            "systemUpdatesMonitoringEffect": {
+              "value": "AuditIfNotExists"
+            },
+            "vulnerabilityAssesmentMonitoringEffect": {
+              "value": "AuditIfNotExists"
+            },
+            "webApplicationFirewallMonitoringEffect": {
+              "value": "AuditIfNotExists"
+            }
+          },
+          "PolicyDefinitionId": "/providers/Microsoft.Authorization/policySetDefinitions/1f3afdf9-d0c9-4c3d-847f-89da613e70a8",
+          "Scope": "/subscriptions/3b3d59d9-43ff-4efc-a7c1-355817807d04"
+        },
+        "ResourceId": "/subscriptions/3b3d59d9-43ff-4efc-a7c1-355817807d04/providers/Microsoft.Authorization/policyAssignments/SecurityCenterBuiltIn",
+        "ResourceName": "SecurityCenterBuiltIn",
+        "ResourceType": "Microsoft.Authorization/policyAssignments",
+        "Sku": {
+          "name": "A1",
+          "tier": "Standard"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/providers/Microsoft.Management/managementGroups/tobys-platform",
+        "Type": "/providers/Microsoft.Management/managementGroups",
+        "Name": "tobys-platform",
+        "TenantId": "424956a1-2e68-4c8b-8430-ecf38191fdbe",
+        "DisplayName": "tobys-platform",
+        "UpdatedTime": "0001-01-01T00:00:00Z",
+        "UpdatedBy": null,
+        "ParentId": "/providers/Microsoft.Management/managementGroups/tobys",
+        "ParentName": "tobys",
+        "ParentDisplayName": "tobys",
+        "Children": [
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/tobys-management",
+            "Name": "tobys-management",
+            "DisplayName": "tobys-management",
+            "Children": [
+              {
+                "Type": "/subscriptions",
+                "Id": "/subscriptions/3b3d59d9-43ff-4efc-a7c1-355817807d04",
+                "Name": "3b3d59d9-43ff-4efc-a7c1-355817807d04",
+                "DisplayName": "Scales.cloud",
+                "Children": null
+              }
+            ]
+          },
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/tobys-connectivity",
+            "Name": "tobys-connectivity",
+            "DisplayName": "tobys-connectivity",
+            "Children": null
+          },
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/tobys-identity",
+            "Name": "tobys-identity",
+            "DisplayName": "tobys-identity",
+            "Children": null
+          }
+        ],
+        "properties": {
+          "policyDefinitions": [],
+          "policySetDefinitions": [],
+          "policyAssignments": [],
+          "roleDefinitions": [],
+          "roleAssignments": []
+        }
+      }
+    }
+  }
+}

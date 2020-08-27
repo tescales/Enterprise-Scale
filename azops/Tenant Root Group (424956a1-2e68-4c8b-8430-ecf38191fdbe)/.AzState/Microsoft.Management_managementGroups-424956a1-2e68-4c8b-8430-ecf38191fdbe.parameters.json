@@ -1,0 +1,146 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/providers/Microsoft.Management/managementGroups/424956a1-2e68-4c8b-8430-ecf38191fdbe",
+        "Type": "/providers/Microsoft.Management/managementGroups",
+        "Name": "424956a1-2e68-4c8b-8430-ecf38191fdbe",
+        "TenantId": "424956a1-2e68-4c8b-8430-ecf38191fdbe",
+        "DisplayName": "Tenant Root Group",
+        "UpdatedTime": "0001-01-01T00:00:00Z",
+        "UpdatedBy": null,
+        "ParentId": null,
+        "ParentName": null,
+        "ParentDisplayName": null,
+        "Children": [
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/testRBAC",
+            "Name": "testRBAC",
+            "DisplayName": "testRBAC",
+            "Children": null
+          },
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/tobys",
+            "Name": "tobys",
+            "DisplayName": "tobys",
+            "Children": [
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/tobys-decomissioned",
+                "Name": "tobys-decomissioned",
+                "DisplayName": "tobys-decomissioned",
+                "Children": null
+              },
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/tobys-landingzones",
+                "Name": "tobys-landingzones",
+                "DisplayName": "tobys-landingzones",
+                "Children": [
+                  {
+                    "Type": "/providers/Microsoft.Management/managementGroups",
+                    "Id": "/providers/Microsoft.Management/managementGroups/tobys-sap",
+                    "Name": "tobys-sap",
+                    "DisplayName": "tobys-sap",
+                    "Children": null
+                  },
+                  {
+                    "Type": "/providers/Microsoft.Management/managementGroups",
+                    "Id": "/providers/Microsoft.Management/managementGroups/tobys-corp",
+                    "Name": "tobys-corp",
+                    "DisplayName": "tobys-corp",
+                    "Children": null
+                  },
+                  {
+                    "Type": "/providers/Microsoft.Management/managementGroups",
+                    "Id": "/providers/Microsoft.Management/managementGroups/tobys-online",
+                    "Name": "tobys-online",
+                    "DisplayName": "tobys-online",
+                    "Children": null
+                  }
+                ]
+              },
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/tobys-sandboxes",
+                "Name": "tobys-sandboxes",
+                "DisplayName": "tobys-sandboxes",
+                "Children": null
+              },
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/tobys-platform",
+                "Name": "tobys-platform",
+                "DisplayName": "tobys-platform",
+                "Children": [
+                  {
+                    "Type": "/providers/Microsoft.Management/managementGroups",
+                    "Id": "/providers/Microsoft.Management/managementGroups/tobys-management",
+                    "Name": "tobys-management",
+                    "DisplayName": "tobys-management",
+                    "Children": [
+                      {
+                        "Type": "/subscriptions",
+                        "Id": "/subscriptions/3b3d59d9-43ff-4efc-a7c1-355817807d04",
+                        "Name": "3b3d59d9-43ff-4efc-a7c1-355817807d04",
+                        "DisplayName": "Scales.cloud",
+                        "Children": null
+                      }
+                    ]
+                  },
+                  {
+                    "Type": "/providers/Microsoft.Management/managementGroups",
+                    "Id": "/providers/Microsoft.Management/managementGroups/tobys-connectivity",
+                    "Name": "tobys-connectivity",
+                    "DisplayName": "tobys-connectivity",
+                    "Children": null
+                  },
+                  {
+                    "Type": "/providers/Microsoft.Management/managementGroups",
+                    "Id": "/providers/Microsoft.Management/managementGroups/tobys-identity",
+                    "Name": "tobys-identity",
+                    "DisplayName": "tobys-identity",
+                    "Children": null
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/this-test-mg",
+            "Name": "this-test-mg",
+            "DisplayName": "Here's a new test management Group",
+            "Children": [
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/nested1",
+                "Name": "nested1",
+                "DisplayName": "nested-level1",
+                "Children": null
+              }
+            ]
+          },
+          {
+            "Type": "/subscriptions",
+            "Id": "/subscriptions/bc93b57b-64e1-4729-8efc-02560b1ffab0",
+            "Name": "bc93b57b-64e1-4729-8efc-02560b1ffab0",
+            "DisplayName": "Pay-As-You-Go",
+            "Children": null
+          }
+        ],
+        "properties": {
+          "policyDefinitions": [],
+          "policySetDefinitions": [],
+          "policyAssignments": [],
+          "roleDefinitions": [],
+          "roleAssignments": []
+        }
+      }
+    }
+  }
+}

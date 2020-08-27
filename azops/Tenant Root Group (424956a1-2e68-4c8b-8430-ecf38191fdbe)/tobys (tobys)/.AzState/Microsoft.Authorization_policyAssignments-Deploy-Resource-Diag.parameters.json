@@ -1,0 +1,37 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Identity": {
+          "principalId": "abe4a080-25ef-4261-852c-0ea9343069ec",
+          "tenantId": "424956a1-2e68-4c8b-8430-ecf38191fdbe",
+          "type": "SystemAssigned"
+        },
+        "Location": "westus2",
+        "Name": "Deploy-Resource-Diag",
+        "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/tobys/providers/Microsoft.Authorization/policyAssignments/Deploy-Resource-Diag",
+        "Properties": {
+          "Description": "Deploy-Resource-Diag",
+          "DisplayName": "Deploy-Resource-Diag",
+          "NotScopes": null,
+          "Parameters": {
+            "logAnalytics": {
+              "value": "/subscriptions/3b3d59d9-43ff-4efc-a7c1-355817807d04/resourcegroups/tobys-mgmt/providers/microsoft.operationalinsights/workspaces/tobys-la-3b3d59d9-43ff-4efc-a7c1-355817807d04"
+            }
+          },
+          "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/tobys/providers/Microsoft.Authorization/policySetDefinitions/Deploy-Diag-LogAnalytics",
+          "Scope": "/providers/Microsoft.Management/managementGroups/tobys"
+        },
+        "ResourceId": "/providers/Microsoft.Management/managementGroups/tobys/providers/Microsoft.Authorization/policyAssignments/Deploy-Resource-Diag",
+        "ResourceName": "Deploy-Resource-Diag",
+        "ResourceType": "Microsoft.Authorization/policyAssignments",
+        "Sku": {
+          "name": "A0",
+          "tier": "Free"
+        }
+      }
+    }
+  }
+}

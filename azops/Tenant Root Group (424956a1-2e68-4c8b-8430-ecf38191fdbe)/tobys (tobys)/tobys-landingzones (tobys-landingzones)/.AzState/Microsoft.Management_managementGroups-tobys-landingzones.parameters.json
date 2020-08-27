@@ -1,0 +1,114 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/providers/Microsoft.Management/managementGroups/tobys-landingzones",
+        "Type": "/providers/Microsoft.Management/managementGroups",
+        "Name": "tobys-landingzones",
+        "TenantId": "424956a1-2e68-4c8b-8430-ecf38191fdbe",
+        "DisplayName": "tobys-landingzones",
+        "UpdatedTime": "0001-01-01T00:00:00Z",
+        "UpdatedBy": null,
+        "ParentId": "/providers/Microsoft.Management/managementGroups/tobys",
+        "ParentName": "tobys",
+        "ParentDisplayName": "tobys",
+        "Children": [
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/tobys-sap",
+            "Name": "tobys-sap",
+            "DisplayName": "tobys-sap",
+            "Children": null
+          },
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/tobys-corp",
+            "Name": "tobys-corp",
+            "DisplayName": "tobys-corp",
+            "Children": null
+          },
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/tobys-online",
+            "Name": "tobys-online",
+            "DisplayName": "tobys-online",
+            "Children": null
+          }
+        ],
+        "properties": {
+          "policyDefinitions": [],
+          "policySetDefinitions": [],
+          "policyAssignments": [
+            {
+              "Identity": null,
+              "Location": "westus2",
+              "Name": "Deny-IP-forwarding",
+              "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/tobys-landingzones/providers/Microsoft.Authorization/policyAssignments/Deny-IP-forwarding",
+              "Properties": {
+                "Description": "Deny-IP-Forwarding",
+                "DisplayName": "Deny-IP-Forwarding",
+                "NotScopes": null,
+                "Parameters": null,
+                "PolicyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/88c0b9da-ce96-4b03-9635-f29a937e2900",
+                "Scope": "/providers/Microsoft.Management/managementGroups/tobys-landingzones"
+              },
+              "ResourceId": "/providers/Microsoft.Management/managementGroups/tobys-landingzones/providers/Microsoft.Authorization/policyAssignments/Deny-IP-forwarding",
+              "ResourceName": "Deny-IP-forwarding",
+              "ResourceType": "Microsoft.Authorization/policyAssignments",
+              "Sku": {
+                "name": "A0",
+                "tier": "Free"
+              }
+            },
+            {
+              "Identity": null,
+              "Location": "westus2",
+              "Name": "Deny-Storage-http",
+              "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/tobys-landingzones/providers/Microsoft.Authorization/policyAssignments/Deny-Storage-http",
+              "Properties": {
+                "Description": "Enforce-Secure-Storage",
+                "DisplayName": "Enforce-Secure-Storage",
+                "NotScopes": null,
+                "Parameters": null,
+                "PolicyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/404c3081-a854-4457-ae30-26a93ef643f9",
+                "Scope": "/providers/Microsoft.Management/managementGroups/tobys-landingzones"
+              },
+              "ResourceId": "/providers/Microsoft.Management/managementGroups/tobys-landingzones/providers/Microsoft.Authorization/policyAssignments/Deny-Storage-http",
+              "ResourceName": "Deny-Storage-http",
+              "ResourceType": "Microsoft.Authorization/policyAssignments",
+              "Sku": {
+                "name": "A0",
+                "tier": "Free"
+              }
+            },
+            {
+              "Identity": null,
+              "Location": "westus2",
+              "Name": "Deny-Subnet-Without-Nsg",
+              "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/tobys-landingzones/providers/Microsoft.Authorization/policyAssignments/Deny-Subnet-Without-Nsg",
+              "Properties": {
+                "Description": "Deny-Subnet-Without-Nsg",
+                "DisplayName": "Deny-Subnet-Without-Nsg",
+                "NotScopes": null,
+                "Parameters": null,
+                "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/tobys/providers/Microsoft.Authorization/policyDefinitions/Deny-Subnet-Without-Nsg",
+                "Scope": "/providers/Microsoft.Management/managementGroups/tobys-landingzones"
+              },
+              "ResourceId": "/providers/Microsoft.Management/managementGroups/tobys-landingzones/providers/Microsoft.Authorization/policyAssignments/Deny-Subnet-Without-Nsg",
+              "ResourceName": "Deny-Subnet-Without-Nsg",
+              "ResourceType": "Microsoft.Authorization/policyAssignments",
+              "Sku": {
+                "name": "A0",
+                "tier": "Free"
+              }
+            }
+          ],
+          "roleDefinitions": [],
+          "roleAssignments": []
+        }
+      }
+    }
+  }
+}
