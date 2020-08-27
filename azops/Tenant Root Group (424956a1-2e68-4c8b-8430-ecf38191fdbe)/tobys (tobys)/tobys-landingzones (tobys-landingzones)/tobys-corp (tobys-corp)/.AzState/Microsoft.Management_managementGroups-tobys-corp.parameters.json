@@ -35,7 +35,29 @@
                 "Parameters": {
                   "ipam": {
                     "value": [
-                      "Los Angeles"
+                      {
+                        "name": "toby-great-vnet",
+                        "location": "westus2",
+                        "virtualNetworks": {
+                          "properties": {
+                            "addressSpace": {
+                              "addressPrefixes": [
+                                "10.10.10.0/24"
+                              ]
+                            }
+                          }
+                        },
+                        "networkSecurityGroups": {
+                          "properties": {
+                            "securityRules": []
+                          }
+                        },
+                        "routeTables": {
+                          "properties": {
+                            "routes": []
+                          }
+                        }
+                      }
                     ]
                   }
                 },
