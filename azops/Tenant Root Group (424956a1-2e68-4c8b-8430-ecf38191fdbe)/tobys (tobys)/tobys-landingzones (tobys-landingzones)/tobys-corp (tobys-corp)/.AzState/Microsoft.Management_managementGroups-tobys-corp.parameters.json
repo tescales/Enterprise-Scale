@@ -52,7 +52,7 @@
             }
           ],
           "roleDefinitions": [],
-          "roleAssignments": []
+          "roleAssignments": null
         }
       }
     }
