@@ -106,7 +106,7 @@
             }
           ],
           "roleDefinitions": [],
-          "roleAssignments": null
+          "roleAssignments": []
         }
       }
     }
